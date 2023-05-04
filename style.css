@@ -1,12 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 .container {
     position: relative;
     width: 100vw;
-    height: 100vh;
-    background: #f3f5fc;
+    height: 95vh;
+    background: linear-gradient(#a09f9f , white);
 }
 .texto {
     position: absolute;
@@ -14,19 +15,19 @@
     height: 60%;
     left: 12%;
     top: 15%;
-    border: none;
+    border: black solid;
     font-family: "inter";
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    background-color: #f3f5fc;
+    background-color: #bcbcbcb1;
 }
 .texto::placeholder {
     color: #343a40;
 }
 .texto:focus, .texto:active {
-    border: none;
+    border: black solid;
     outline: none;
 }
 .terminos {
@@ -56,17 +57,18 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 1% 0;
+    padding: 1% ;
     position: absolute;
     width: 80%;
     left: 12%;
     top: 83%;
+    
 }
 .btn-encriptar {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2%;
+    padding: 2% ;
     gap: 8px;
     width: 25%;
     background-color: darkgrey;
@@ -76,6 +78,7 @@
     line-height: 19px;
     text-align: center;
     color: #ffffff;
+    margin: 0px 4px 0px 0px;
 }
 .btn-desencriptar{
     box-sizing: border-box;
@@ -110,8 +113,8 @@
     height: 90%;
     left: 60%;
     top: 5%;
-    background: #fff;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.20);
+    background: #7a7878;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.80);
     border-radius: 32px;
     
 }
@@ -136,7 +139,7 @@
     font-size: 24px;
     line-height: 120%;
     text-align: center;
-    color: #343a40;
+    color: #000000;
 
 }
 .mensaje-encriptado p{
@@ -147,13 +150,30 @@
     font-size: 16px;
     line-height: 150%;
     text-align: center;
-    color: #495057;
+    color: #070707;
 }
 .encriptado img{
     position: absolute;
     width: 80%;
     height: 20%;
     top: 15%;
+}
+footer{
+    display: block;
+}
+p{
+    font-family: "inter";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #0b1621;
+    opacity: 0.8;
+    flex: none;
+    border: 1;
+    flex-grow: 0;
+    text-align: center;
+    
 }
 
 /*responsive design*/
